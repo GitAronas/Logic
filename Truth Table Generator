@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Aug 28 15:48:51 2023
+
+@author: Amar Doshi
+"""
+
+def TruthTable(n: int) -> list[bool]:
+    def table(n):
+        if n:
+            for i in TF:
+                r.append(i)
+                table(n-1)
+                r.pop()
+        else:
+            t.append(r.copy())
+
+    r = []
+    t = []
+    TF = (True, False)
+
+    table(n)
+
+    return t
