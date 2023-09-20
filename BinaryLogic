@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug 31 18:16:33 2023
+
+@author: Amar Doshi
+"""
+
+
+def NOT(p: bool) -> bool:
+    return not p
+
+def AND(p: bool, q: bool) -> bool:
+    return p and q
+
+def OR(p: bool, q: bool) -> bool:
+    return p or q
+
+def XOR(p: bool, q: bool) -> bool:
+    return (p or q) and not (p and q)
+
+def IMP(p: bool, q: bool) -> bool:
+    return (not p) or q
+
+def IFF(p: bool, q: bool) -> bool:
+    return (not (p or q)) or (p and q)
+
+def NAND(p: bool, q: bool) -> bool:
+    return not(p and q)
+
+def NOR(p: bool, q: bool) -> bool:
+    return not(p or q)
+
