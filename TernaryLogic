@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Sep 16 10:48:38 2023
+
+@author: Amar Doshi
+"""
+
+# Reference: https://en.wikipedia.org/wiki/Three-valued_logic
+
+
+def NOT(p: int) -> int:
+    return -1 * p
+
+
+def AND(p: int, q: int) -> int:
+    return min(p, q)
+
+
+def OR(p: int, q: int) -> int:
+    return max(p, q)
+
+
+def XOR(p: int, q: int) -> int:
+    return min(max(p, q), -1 * min(p, q))
+
+
+def IMP(p: int, q: int) -> int:
+    return max(-1 * p, q)
+
+
+def IFF(p: int, q: int) -> int:
+    return -1 * min(max(p, q), -1 * min(p, q))
+
+
+def NAND(p: int, q: int) -> int:
+    return -1 * min(p, q)
+
+
+def NOR(p: int, q: int) -> int:
+    return -1 * max(p, q)
+
