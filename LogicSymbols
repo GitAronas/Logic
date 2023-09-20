@@ -1,0 +1,47 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug 31 17:10:46 2023
+
+@author: Amar Doshi
+"""
+
+
+LOGICSYMBOLS = {'NOT':           '\U000000AC',
+                'AND':           '\U00002227',
+                'OR' :           '\U00002228',
+                'XOR':           '\U000022BB',
+                'IMP':           '\U000021D2',
+                'IFF':           '\U000021D4',
+                'NAND':          '\U000022BC',
+                'NOR':           '\U000022BD',
+                'TAUTOLOGY':     '\U000022A4',
+                'CONTRADICTION': '\U000022A5',
+                'FORALL':        '\U00002200',
+                'EXISTS':        '\U00002203',
+                'EXISTSONE':     '\U00002203!',
+                'NOTEXISTS':     '\U00002204',
+                'POSSIBLE':      '\U000025C7',
+                'PROVES':        '\U000022A2',
+                'MODELS':        '\U000022A8'
+                }
+
+
+SYMBOLSLOGIC = {'\U000000AC':    'NOT',
+                '\U00002227':    'AND',
+                '\U00002228':    'OR',
+                '\U000022BB':    'XOR',
+                '\U000021D2':    'IMP',
+                '\U000021D4':    'IFF',
+                '\U000022BC':    'NAND',
+                '\U000022BD':    'NOR',
+                '\U000022A4':    'TAUTOLOGY',
+                '\U000022A5':    'CONTRADICTION',
+                '\U00002200':    'FORALL',
+                '\U00002203':    'EXISTS',
+                '\U00002203!':   'EXISTSONE',
+                '\U00002204':    'NOTEXISTS',
+                '\U000025C7':    'POSSIBLE',
+                '\U000022A2':    'PROVES',
+                '\U000022A8':    'MODELS'
+                }
+
