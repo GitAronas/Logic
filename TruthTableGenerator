@@ -5,10 +5,10 @@ Created on Mon Aug 28 15:48:51 2023
 @author: Amar Doshi
 """
 
-def truthTable(n: int) -> list[bool]:
+def truthTable(n, values=(True, False)):
     def table(n):
         if n:
-            for i in TF:
+            for i in values:
                 r.append(i)
                 table(n-1)
                 r.pop()
@@ -17,7 +17,6 @@ def truthTable(n: int) -> list[bool]:
 
     r = []
     t = []
-    TF = (True, False)
 
     table(n)
 
